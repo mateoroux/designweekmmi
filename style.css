@@ -1,0 +1,29 @@
+/* MAIN IMAGE */
+
+#main-image
+{
+    height: auto;
+    width: auto;
+    background: url(images/overlay-image1.jpg) center;
+    margin-top: 0 ;
+}
+
+
+#main-image h1
+{
+    font-weight: normal;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 300px;
+    margin-bottom: 300px;
+    color: white;
+    font-size: 50px;
+}
+
+
+h1
+{
+color: black;
+font-family: play;
+
+}
