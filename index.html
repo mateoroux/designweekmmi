@@ -3,27 +3,148 @@
     <meta charset="utf-8">
     <title>Speed Moto Services</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/" />
 
 </head>
 
 <body>
-    <header>
-        <section id="main-image">
-        <div class="wrapper">
-            <h1>Speed Moto Services</h1>
+
+        <div class="box">
+            <div><a href="#home">Accueil</a></div>
+            <div><a href="#news">Nos modèles</a></div>
+            <div><a href="#contact">Nos accessoires</a></div>
+            <div><a href="#about">Nos services</a></div>
+            <div><img class="nav" src="img/logoF.png"/></div>
         </div>
-        </section>
-        <div class="wrapper">
-                <nav>
-                    <ul>
-                        <li><a href="">Accueil</a></li>
-                        <li><a href="">Nos modèles</a></li>
-                        <li><a href="">Nos accessoires</a></li>
-                        <li><a href="">Nos services</a></li>
-                    </ul>
-                </nav>
+
+
+    <h1 style="margin-top:7%; margin-bottom: 62vh;">Speed Moto <br>
+        Services
+    </h1>
+
+    <div class="image" style="text-align: center;">
+        <img src="img/trio.png"/>
+      
+    <br><br><br><br> <br><br><br><br> <br><br><br><br>
+        <h6 style="margin-top:70px; font-size:80px; color:white;"> Nos équipements</h6>
+        
+    </div>
+
+    <div class="change-color">
+                <!-- Slideshow container -->
+    <div class="slideshow-container" >
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            
+            <img src="img/Accessoires.jpg" style="width:100%; margin-top:-70px; " >
+            <div class="text"></div>
+            </div>
+        
+            <div class="mySlides fade">
+      
+            <img src="https://www.motoblouz.com/enjoytheride/wp-content/uploads/2017/06/equipement_moto_debutant_permis.jpg" style="width:100%; margin-top:-70px; ">
+            <div class="text"></div>
+            </div>
+        
+            <div class="mySlides fade">
+           
+            <img src="img/casque.jpg" style="width:100%; margin-top:-70px; ">
+            
+            </div>
+        
+            <div>
+            <img src="img/découvrir.png">
+            <text-align: center>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-    </header>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+        </div>
+
+        <div style="margin-bottom: 6%;">
+
+        </div>
+
+
+    <div class="change-color2">
+         
+        <div class="violet">
+            <h2 id="white">A propos</h2>
+            <p id="white">Nous sommes une équipe de mécaniciens spécialisés dans l'entretien, la réparation de plusieurs styles et marques de motos, situés à Villenave-d'Ornon.</p>
+            <br><br>
+        </div>
+
+        <center>
+            <a href="https://www.google.fr/maps/place/6+Rue+Jacques-Yves+Cousteau,+33140+Villenave-d'Ornon/@44.784217,-0.577694,16z/data=!4m5!3m4!1s0xd5527398a91c8a5:0xf584491228f2d71d!8m2!3d44.7847699!4d-0.5778542" target="_blanc" ><img style="margin-top:-30px;" src="img/maps.png"/></a>
+        </center> 
+
+        <h4 id="adresse">
+            6 Rue Jacques-Yves<br>
+            Cousteau, 33140<br>
+            Villenave-d'Ornon
+        </h4>
+
+        <div class="footer">
+            <br> <br> <br> <br>
+            <h6 id="white4" > Contact </h6>
+            <br> <br> <br> <br>
+            <h6 id="white4"> 05 56 80 31 79 </h6>
+            <br> <br> <br> <br>
+            <a href="https://fr-fr.facebook.com/SpeedMotoServices/" target="_blanc" ><img style="width: 4%; height:3%; float:left;"src="img/fb.png"/></a>
+            <img src="img/sms.png" style="width: 4%; height:3%; float:right;"/>
+            <br> <br> <br> <br>
+        </div>
+
+    
+         
+
+
+    </div>
+
+    <script>
+    
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+
+
+</script>
+        
+
 </body>
