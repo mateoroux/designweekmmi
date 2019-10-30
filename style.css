@@ -1,7 +1,7 @@
 html { 
     margin:0;
     padding:0;
-    background:url(img/moto.png) no-repeat;
+    background:url(moto.png) no-repeat;
     background-size: 100%;
     background-color: black;
   }
@@ -100,7 +100,7 @@ p{
 }
 
 .footer{
-  background:url(img/footer.png) ;
+  background:url(footer.png) ;
   background-size: 100%;
 }
 
